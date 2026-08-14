@@ -1,0 +1,39 @@
+{
+  "name": "dsh-path-guard",
+  "version": "1.0.0",
+  "description": "DSH (DeepSeek Harness) plugin: deny agent tool access to configured paths (reads and writes) — the path-level deny dsh never had",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "security",
+    "guard",
+    "permissions",
+    "cordis",
+    "plugin"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    }
+  },
+  "files": [
+    "lib",
+    "install.sh",
+    "test.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CloudyMountain/dsh-path-guard.git"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  }
+}
